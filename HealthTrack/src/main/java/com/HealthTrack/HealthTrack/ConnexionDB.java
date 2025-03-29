@@ -17,8 +17,6 @@ public class ConnexionDB {
             }
 
             Class.forName("com.mysql.cj.jdbc.Driver"); 
-            System.out.println("✅ Pilote chargé avec succès.");
-
             String urlBD = p.getProperty("jdbc.url");
             String user = p.getProperty("jdbc.login");
             String password = p.getProperty("jdbc.password");
@@ -30,20 +28,5 @@ public class ConnexionDB {
             e.printStackTrace();
         }
         return con;
-    }
-
-
-    public static void main(String[] args) throws SQLException {
-        Connection connexion = connectDB();
-        Statement s = connexion.createStatement();
-        System.out.println("🎉 Connexion établie avec succès !");
-        String sql = "CREATE TABLE IF NOT EXISTS users (" +
-                "id INT PRIMARY KEY AUTO_INCREMENT, " +
-                "prenom TEXT NOT NULL, " +
-                "nom TEXT NOT NULL, " +
-                "mail TEXT NOT NULL UNIQUE, " +
-                "mot_passe TEXT NOT NULL)";
-
-		s.executeUpdate(sql);
     }
 }

@@ -18,22 +18,27 @@ public class App {
 
             switch (choix) {
                 case "1":
+                    // Demander les informations d'inscription
                     System.out.print("Nom : ");
                     String nom = scanner.nextLine();
-                    System.out.println("Prénom : ");
+                    System.out.print("Prénom : ");
                     String prenom = scanner.nextLine();
                     System.out.print("Gmail : ");
                     String gmail = scanner.nextLine();
                     System.out.print("Mot de passe : ");
                     String motDePasse = scanner.nextLine();
 
-                    gestionnaire.inscrireUtilisateur(prenom ,nom, gmail, motDePasse);
+                    // Inscrire l'utilisateur dans la base de données
+                    gestionnaire.inscrireUtilisateur(prenom, nom, gmail, motDePasse);
                     break;
                 case "2":
-                    System.out.print("gmail : ");
+                    // Demander les informations de connexion
+                    System.out.print("Gmail : ");
                     String gmailConnexion = scanner.nextLine();
                     System.out.print("Mot de passe : ");
                     String motDePasseConnexion = scanner.nextLine();
+
+                    // Connexion de l'utilisateur
                     utilisateurConnecte = gestionnaire.connecterUtilisateur(gmailConnexion, motDePasseConnexion);
 
                     if (utilisateurConnecte == null) {
@@ -58,7 +63,6 @@ public class App {
         System.out.println("      👍 HEALTH TRACK CLI - Bienvenue ! ");
         System.out.println("===================================================\n");
 
-        // Suppression de la gestion de la dernière connexion
         System.out.println("Bonjour " + utilisateur.getGmail() + " ! 🔥");
 
         System.out.println("---------------------------------------------------");
