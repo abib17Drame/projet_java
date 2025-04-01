@@ -2,13 +2,30 @@ package com.HealthTrack.HealthTrack;
 
 import java.util.Scanner;
 
-public class App {
+public class App {  
+    
+    public static void SaisirDonneesSante(Utilisateur u){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\n Enregistrement des données santé !");
+        System.out.print("Nombre de pas : ");
+        int pas = sc.nextInt();
+        System.out.print("Litres d'eau bus : ");
+        int eau = sc.nextInt();
+        System.out.print("Poids (kg) : ");
+        double poids = sc.nextDouble();
+        System.out.print("Heures de sommeil : ");
+        double sommeil = sc.nextDouble();
+        GestionnaireDonneesSante gestionnaireSante = new GestionnaireDonneesSante();
+        gestionnaireSante.enregistrerDonneesSante(u.getGmail(), pas, eau, poids, sommeil);
+    }
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         GestionnaireUtilisateurs gestionnaire = new GestionnaireUtilisateurs();
         Utilisateur utilisateurConnecte = null;
 
         while (utilisateurConnecte == null) {
+        //Affichage nom de l'application ...
             System.out.println("\n=== MENU PRINCIPAL ===");
             System.out.println("1. Inscription");
             System.out.println("2. Connexion");
@@ -18,7 +35,6 @@ public class App {
 
             switch (choix) {
                 case "1":
-                    // Demander les informations d'inscription
                     System.out.print("Nom : ");
                     String nom = scanner.nextLine();
                     System.out.print("Prénom : ");
@@ -28,11 +44,9 @@ public class App {
                     System.out.print("Mot de passe : ");
                     String motDePasse = scanner.nextLine();
 
-                    // Inscrire l'utilisateur dans la base de données
                     gestionnaire.inscrireUtilisateur(prenom, nom, gmail, motDePasse);
                     break;
                 case "2":
-                    // Demander les informations de connexion
                     System.out.print("Gmail : ");
                     String gmailConnexion = scanner.nextLine();
                     System.out.print("Mot de passe : ");
@@ -54,11 +68,11 @@ public class App {
             }
         }
 
-        // Affichage de l'accueil avec des données réelles
-        afficherAccueil(utilisateurConnecte, scanner);
+        afficherAccueil(utilisateurConnecte);
     }
 
-    public static void afficherAccueil(Utilisateur utilisateur, Scanner scanner) {
+    public static void afficherAccueil(Utilisateur utilisateur) {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("\n===================================================");
         System.out.println("      👍 HEALTH TRACK CLI - Bienvenue ! ");
         System.out.println("===================================================\n");
@@ -80,11 +94,10 @@ public class App {
             System.out.print("Entre le numéro de ton choix : ");
 
             String choix = scanner.nextLine();
-            if (choix.equals("0")) {
-                System.out.println("👋 Déconnexion réussie !");
-                break;
-            } else {
-                System.out.println("✅ Option " + choix + " sélectionnée !");
+            switch(choix){
+                case "1": SaisirDonneesSante(utilisateur); break;
+                case "0": System.out.println("Au revoir");
+                          scanner.close(); return;
             }
         }
     }

@@ -22,7 +22,7 @@ public class ConnexionDB {
             String password = p.getProperty("jdbc.password");
 
             con = DriverManager.getConnection(urlBD, user, password);
-            System.out.println("✅ Connexion à la base de données réussie.");
+            
         } catch (Exception e) {
             System.err.println("❌ Erreur de connexion à la base de données : " + e.getMessage());
             e.printStackTrace();

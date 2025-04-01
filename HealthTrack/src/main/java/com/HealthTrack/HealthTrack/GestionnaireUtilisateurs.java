@@ -27,7 +27,7 @@ public class GestionnaireUtilisateurs {
 
     public Utilisateur connecterUtilisateur(String gmail, String motDePasse) {
         try (Connection con = ConnexionDB.connectDB();
-             Statement p = con.createStatement()) {
+            Statement p = con.createStatement()) {
              
             String requeteConnexion = "SELECT * FROM users WHERE mail = '" + gmail 
                                       + "' AND mot_passe = '" + motDePasse + "'";
@@ -39,7 +39,6 @@ public class GestionnaireUtilisateurs {
                 String nom = rs.getString("nom");
                 String gmailResult = rs.getString("mail");
                 String motDePasseResult = rs.getString("mot_passe");
-
                 Utilisateur utilisateur = new Utilisateur(prenom, nom, gmailResult, motDePasseResult);
                 System.out.println("✅ Connexion réussie, bienvenue " + gmail + " !");
                 return utilisateur;
