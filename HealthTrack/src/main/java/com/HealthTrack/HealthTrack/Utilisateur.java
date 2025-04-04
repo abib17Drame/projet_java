@@ -13,6 +13,14 @@ public class Utilisateur {
         this.motDePasse = motDePasse;
     }
 
+    public String getPrenom() {
+        return prenom;
+    }
+    
+    public String getNom() {
+        return nom;
+    }
+
     public String getGmail() {
         return gmail;
     }
