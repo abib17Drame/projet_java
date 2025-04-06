@@ -292,10 +292,10 @@ public class App {
         }
     }
 
-    /**
-     * Menu 6 : Paramètres
-     * Options : Modifier ses informations personnelles (champ par champ), supprimer le compte, se déconnecter.
-     * Retourne l'objet Utilisateur mis à jour ou null en cas de déconnexion/suppression.
+    /*
+      Menu 6 : Paramètres
+     Options : Modifier ses informations personnelles (champ par champ), supprimer le compte, se déconnecter.
+     Retourne l'objet Utilisateur mis à jour ou null en cas de déconnexion/suppression.
      */
     public static Utilisateur gererParametres(Utilisateur u) {
         Scanner sc = new Scanner(System.in);
