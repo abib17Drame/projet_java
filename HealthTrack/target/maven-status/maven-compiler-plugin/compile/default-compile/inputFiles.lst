@@ -1,5 +1,12 @@
-C:\Users\admin\Desktop\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\App.java
-C:\Users\admin\Desktop\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\ConnexionDB.java
-C:\Users\admin\Desktop\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireDonneesSante.java
-C:\Users\admin\Desktop\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireUtilisateurs.java
-C:\Users\admin\Desktop\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\Utilisateur.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\App.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\ConnexionDB.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\DonneesSante.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireDonneesSante.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireHumeurJournal.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireObjectifs.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireRappels.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireStatistiques.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\GestionnaireUtilisateurs.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\Objectifs.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\Rappel.java
+C:\Users\admin\Desktop\24-25\projet_java\HealthTrack\src\main\java\com\HealthTrack\HealthTrack\Utilisateur.java
