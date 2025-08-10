@@ -2,11 +2,7 @@
 
 ## À propos du projet
 
-**HealthTrack** est une application de bureau développée en Java qui permet aux utilisateurs de suivre leurs données de santé, de définir des objectifs, de gérer des rappels pour les médicaments ou les rendez-vous, et de suivre leur humeur quotidienne. Ce projet a été réalisé dans le cadre de notre deuxième année en DUT Génie Informatique.
-
-### Contexte
-
-Ce projet a été développé par des étudiants de l'**École Supérieure Polytechnique (ESP) de Dakar** pour l'unité d'enseignement de `Projet Java` en deuxième année de **DUT Génie Informatique**.
+**HealthTrack** est une application de console développée en Java qui permet aux utilisateurs de suivre leurs données de santé, de définir des objectifs, de gérer des rappels et de suivre leur humeur quotidienne. Ce projet a été réalisé dans le cadre de notre deuxième année en DUT Génie Informatique.
 
 ### Auteurs
 
@@ -20,10 +16,10 @@ Ce projet a été développé par des étudiants de l'**École Supérieure Polyt
 
 *   **Gestion des utilisateurs** : Création de compte et authentification.
 *   **Suivi des données de santé** : Enregistrez des informations comme le poids, la taille, la tension artérielle, etc.
-*   **Gestion des objectifs** : Définissez et suivez des objectifs de santé personnalisés (ex: perte de poids, nombre de pas).
+*   **Gestion des objectifs** : Définissez et suivez des objectifs de santé personnalisés
 *   **Journal de l'humeur** : Tenez un journal quotidien de votre humeur et de vos notes personnelles.
 *   **Rappels** : Configurez des rappels pour la prise de médicaments, les rendez-vous médicaux ou d'autres activités.
-*   **Statistiques** : Visualisez des statistiques et des graphiques sur vos progrès et vos données de santé.
+*   **Statistiques** : Visualisez des statistiques sur vos progrès et vos données de santé.
 
 ---
 
@@ -51,8 +47,7 @@ Suivez ces étapes pour configurer et lancer le projet localement.
 1.  **Clonez le dépôt**
 
     ```bash
-    git clone <URL_DU_DEPOT_GIT>
-    cd projet_java/HealthTrack
+    git clone https://github.com/abib17Drame/projet_java.git
     ```
 
 2.  **Configurez la base de données**
@@ -71,14 +66,6 @@ Suivez ces étapes pour configurer et lancer le projet localement.
 
 4.  **Exécutez l'application**
 
-    Une fois la compilation terminée, vous pouvez lancer l'application avec la commande suivante :
-
-    ```bash
-    mvn exec:java -Dexec.mainClass="com.HealthTrack.HealthTrack.App"
-    ```
+    Une fois la compilation terminée, vous pouvez lancer l'application
 
 ---
-
-## Licence
-
-Ce projet est distribué sous la licence MIT. Voir le fichier `LICENSE` pour plus de détails.
